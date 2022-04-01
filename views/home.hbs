@@ -1,0 +1,17 @@
+<div>
+	<header>
+		{{> logo}}
+        {{> username}}
+    </header>
+    <form action="/login" method="POST" id="loginForm">
+        <article>
+            <input id="userBox" name="userBox" type="text" title="Please enter this field" required placeholder="Username" /><br>
+            <input id="passBox" name="passBox" type="password" title="Please enter this field" required placeholder="Password" /><br>
+            <button id="loginBtn" type="submit" value="Submit" title="Login">LOGIN</button><br>
+            <label id="errorLabel">{{{errors}}}</label>
+        </article>
+    </form>
+	<footer>
+		{{> footer}}
+	</footer>
+</div>

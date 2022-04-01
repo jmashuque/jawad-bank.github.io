@@ -1,0 +1,17 @@
+<div>
+	<header>
+		{{> logo}}
+		{{> username}}
+    </header>
+    <article>
+        Account: {{{account}}}<br>
+		Account Type: {{{type}}}<br>
+		Account Balance: ${{{bal}}}<br>
+		<form action="/account" method="POST" id="accountForm">
+			<button id="okButton" type="submit" name="submitButton" value="Ok" title="Ok">OK</button>
+		</form>
+    </article>
+	<footer>
+		{{> footer}}
+	</footer>
+</div>

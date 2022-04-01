@@ -1,0 +1,18 @@
+<div>
+	<header>
+		{{> logo}}
+		{{> username}}
+    </header>
+    <article>
+        Account number #{{{acc}}}<br>
+        <form action="/withdrawal" method="POST" id="withdrawForm">
+			<label id="amountLabel" for="withdrawBox">Amount</label>
+            <input id="withdrawBox" name="withdrawBox" type="text" title="Please enter this field" placeholder="Amount" required /><br>
+            <button id="okButton" type="submit" name="submitButton" value="Ok" title="Ok">OK</button>
+            <button id="cancelButton" type="submit" name="submitButton" value="Cancel" title="Cancel" formnovalidate>CANCEL</button>
+		</form>
+    </article>
+	<footer>
+		{{> footer}}
+	</footer>
+</div>

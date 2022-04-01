@@ -1,0 +1,24 @@
+<div>
+	<header>
+		{{> logo}}
+        {{> username}}
+    </header>
+    <form action="/openaccform" method="POST" id="openaccForm">
+        <article>
+            <input type="radio" id="chequeRad" name="selection" value="Chequing" onclick="enabler()">
+            <label for="chequeRad">Chequing</label><br>
+            <input type="radio" id="savingsRad" name="selection" value="Savings" onclick="enabler()">
+            <label for="savingsRad">Savings</label><br>
+            <button id="typeButton" type="submit" name="submitButton" value="Submit" disabled title="Submit">SUBMIT</button>
+            <button id="cancelButton" type="submit" name="submitButton" value="Cancel" title="Cancel">CANCEL</button>
+        </article>
+    </form>
+    <script>
+        function enabler() {
+            document.getElementById("typeButton").disabled = false;
+        }
+    </script>
+	<footer>
+		{{> footer}}
+	</footer>
+</div>

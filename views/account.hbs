@@ -1,0 +1,28 @@
+<div>
+	<header>
+		{{> logo}}
+        {{> username}}
+    </header>
+    <form action="/accountform" method="POST" id="accountForm">
+        <article>
+            <label for="acc">Choose an Account:</label>
+            <select id="acc" name="acc">
+                <option value="" selected disabled hidden>Accounts</option>
+                {{{accounts}}}
+            </select><br>
+            <input type="radio" id="balanceRad" name="selection" value="balance">
+            <label for="balance">Balance</label><br>
+            <input type="radio" id="depositRad" name="selection" value="deposit">
+            <label for="deposit">Deposit</label><br>
+            <input type="radio" id="withdrawalRad" name="selection" value="withdrawal">
+            <label for="deposit">Withdrawal</label><br>
+            <input type="radio" id="openaccountRad" name="selection" value="openaccount" formnovalidate>
+            <label for="deposit">Open an Account</label><br>
+            <button id="accountButton" type="submit" value="Submit" title="Submit">SUBMIT</button><br>
+            <label id="errorLabel">{{{errors}}}</label>
+        </article>
+    </form>
+	<footer>
+		{{> footer}}
+	</footer>
+</div>
