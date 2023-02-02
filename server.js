@@ -1,11 +1,3 @@
-/*
-    Name: Jawad Mashuque
-    File: server.js (Web Bank 2)
-    Course: WEB322
-    Created: 14-Jun-2020
-    Modified: 06-Aug-2020
-*/
-
 const HTTP_PORT = process.env.PORT || 3000;
 
 const express = require("express");
